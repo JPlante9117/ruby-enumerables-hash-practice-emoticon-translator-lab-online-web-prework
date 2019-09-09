@@ -14,20 +14,28 @@ def load_library(file)
   get_info                                          #RETURN THE VALUE
 end
 
-def get_japanese_emoticon(yaml, emoji)
+def get_japanese_emoticon(yaml, eng_emoji)
   library = load_library(yaml)                                #load the library using the given yaml file
   
-  library
+  library                                                     #Actually loading it
   
-  if library[:get_emoticon].include?(emoji)
-    library[:get_emoticon][emoji]
+  if library[:get_emoticon].include?(eng_emoji)                   #checks to see if the library includes the given emoticon
+    library[:get_emoticon][eng_emoji]                             #returns the equivalent of the emoticon in Japanese
   else
-    "Oops!"
+    "Sorry, that emoticon is not found!"
   end
   
   
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(yaml, jap_emoji)
+  library = load_library(yaml)                                #load the library using the given yaml file
+  
+  library                                                     #Actually loading it
+  
+  if library[:get_emoticon].include?(jap_emoji)                   #checks to see if the library includes the given emoticon
+    library[:get_emoticon][jap_emoji]                             #returns the equivalent of the emoticon in Japanese
+  else
+    "Sorry, that emoticon is not found!"
+  end
 end
