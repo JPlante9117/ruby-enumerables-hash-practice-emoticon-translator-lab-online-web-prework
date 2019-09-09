@@ -19,8 +19,8 @@ def get_japanese_emoticon(yaml, emoji)
   
   library
   
-  if library[:get_emoticon].include?(english_emoticon)
-    library[:get_emoticon][english_emoticon]
+  if library[:get_emoticon].include?(emoji)
+    library[:get_emoticon][emoji]
   else
     "Oops!"
   end
