@@ -8,8 +8,11 @@ def load_library(file)
   get_info = {get_meaning: {}, get_emoji: {}}
   
   emoticons_hash.each do |meaning, emoji|
-    binding.pry
+    get_info[:get_meaning][meaning] = meaning
+    get_info[:get_emoji][emoji] = emoticon
   end
+  
+  get_info
   
 end
 
