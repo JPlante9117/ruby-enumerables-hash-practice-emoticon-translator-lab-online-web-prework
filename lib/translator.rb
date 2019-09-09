@@ -17,6 +17,8 @@ end
 def get_japanese_emoticon(yaml, emoji)
   library = load_library(yaml)                                #load the library using the given yaml file
   
+  library
+  
   if library[:get_emoticon].include?(english_emoticon)
     library[:get_emoticon][english_emoticon]
   else
