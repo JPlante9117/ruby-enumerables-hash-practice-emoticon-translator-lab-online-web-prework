@@ -7,7 +7,7 @@ def load_library(file)
   
   get_info = {get_meaning: {}, get_emoji: {}}
   
-  emoticons_hash.each do |a, b|
+  emoticons_hash.each do |meaning, emoji|
     binding.pry
   end
   
