@@ -5,7 +5,7 @@ def load_library(file)
   
   emoticons_hash = YAML.load('emoticons.yml')
   
-  emoticons_hash
+  binding.pry
   
 end
 
