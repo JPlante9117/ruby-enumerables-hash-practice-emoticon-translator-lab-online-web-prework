@@ -5,11 +5,11 @@ def load_library(file)
   
   emoticons_hash = YAML.load_file(file)
   
-  get_info = {get_meaning: {}, get_emoji: {}}
+  get_info = {get_meaning: {}, get_emoticon: {}}
   
   emoticons_hash.each do |meaning, emoji|
     get_info[:get_meaning][emoji[1]] = meaning
-    get_info[:get_emoji][emoji[0]] = emoji[1]
+    get_info[:get_emoticon][emoji[0]] = emoji[1]
   end
   get_info
 end
