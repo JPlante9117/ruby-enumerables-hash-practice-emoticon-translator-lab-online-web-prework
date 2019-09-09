@@ -34,7 +34,7 @@ def get_english_meaning(yaml, jap_emoji)
   library                                                     #Actually loading it
   
   if library[:get_emoticon].include?(jap_emoji)                   #checks to see if the library includes the given emoticon
-    library[:get_emoticon][jap_emoji]                             #returns the equivalent of the emoticon in Japanese
+    library[:get_meaning][jap_emoji]                             #returns the equivalent of the emoticon in Japanese
   else
     "Sorry, that emoticon was not found"
   end
