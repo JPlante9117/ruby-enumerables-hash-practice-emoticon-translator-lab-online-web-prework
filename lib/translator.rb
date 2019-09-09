@@ -13,7 +13,7 @@ def load_library(file)
   end
   
   get_info
-  
+  binding.pry
 end
 
 def get_japanese_emoticon
