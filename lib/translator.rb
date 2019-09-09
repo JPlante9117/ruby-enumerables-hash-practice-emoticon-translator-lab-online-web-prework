@@ -5,7 +5,11 @@ def load_library(file)
   
   emoticons_hash = YAML.load_file(file)
   
-  emoticons_hash
+  get_info = {get_meaning: {}, get_emoji: {}}
+  
+  emoticons_hash.each do |a, b|
+    binding.pry
+  end
   
 end
 
