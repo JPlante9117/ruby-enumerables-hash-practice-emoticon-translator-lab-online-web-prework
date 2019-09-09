@@ -34,8 +34,10 @@ def get_english_meaning(yaml, jap_emoji)
   library                                                     #Actually loading it
   
   if library[:get_meaning].include?(jap_emoji)                   #checks to see if the library includes the given emoticon
-    library[:get_meaning][jap_emoji]                             #returns the equivalent of the emoticon in Japanese
+    library[:get_meaning][jap_emoji]                             #returns the equivalent of the emoticon in English
   else
     "Sorry, that emoticon was not found"
   end
 end
+
+#Overall, the basis is asking if you are translating from English, you already know the meaning. You want to :get_emoticon and send it out to your friends! However, if you receive an emoji, you need to :get_meaning in order to make sense of it!
